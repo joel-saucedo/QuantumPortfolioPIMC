@@ -9,7 +9,13 @@ setup(
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     install_requires=[
-        # List your project dependencies here
+        'numpy>=1.21.0',
+        'pandas>=1.3.0',
+        'matplotlib>=3.4.0',
+        'scipy>=1.7.0',
+        'seaborn>=0.11.0',
+        'scikit-learn>=1.0.0',
+        'pytest>=6.0.0',
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
