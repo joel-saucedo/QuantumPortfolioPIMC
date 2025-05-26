@@ -1,3 +1,24 @@
+class Portfolio:
+    """Portfolio class for managing assets and optimization."""
+    
+    def __init__(self):
+        self.assets = {}
+    
+    def add_asset(self, symbol, quantity):
+        """Add an asset to the portfolio."""
+        self.assets[symbol] = quantity
+    
+    def remove_asset(self, symbol):
+        """Remove an asset from the portfolio."""
+        if symbol in self.assets:
+            del self.assets[symbol]
+    
+    def optimize(self):
+        """Optimize the portfolio allocation."""
+        # Placeholder optimization
+        return {"optimized_weights": [1/len(self.assets)] * len(self.assets)}
+
+
 def evaluate_portfolio(returns, risks, weights):
     """
     Evaluate the performance of a portfolio based on returns, risks, and weights.
