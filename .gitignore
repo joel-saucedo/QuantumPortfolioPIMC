@@ -174,4 +174,4 @@ visualizations/reports/*.html
 visualizations/reports/*.pdf
 
 # optional
-create_repo_and_push.sh
+.sh
