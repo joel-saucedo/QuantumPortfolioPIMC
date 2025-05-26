@@ -3,18 +3,17 @@ import sys
 import json
 from src.quantum.pimc import PIMC
 from src.optimization.algorithms import optimize_portfolio
-from config.settings import CONFIG
+from config.settings import SIMULATION_CONFIG
 
 def main():
-    # Load configuration settings
-    with open(CONFIG['simulation_config'], 'r') as config_file:
-        simulation_params = json.load(config_file)
+    # Use configuration settings directly
+    simulation_params = SIMULATION_CONFIG
 
     # Initialize PIMC simulation
-    pimc_simulation = PIMC(**simulation_params)
+    pimc_simulation = PIMC(simulation_params)
 
     # Run the simulation
-    results = pimc_simulation.run()
+    results = pimc_simulation.run_simulation()
 
     # Save results to output directory
     output_file = os.path.join('data', 'output', 'simulation_results.json')
