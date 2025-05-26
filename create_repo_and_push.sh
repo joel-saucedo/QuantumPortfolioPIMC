@@ -2,7 +2,7 @@
 
 # Variables - Replace these with your desired values
 #REPO_NAME="QuantumPortfolioPIMC"
-COMMIT_MESSAGE="Update setup.py with proper dependency versions from requirements.txt"
+COMMIT_MESSAGE="Add comprehensive .gitignore file for Python project"
 
 # Initialize Git repository, set main branch, add all files, commit, create GitHub repo, and push
 # Using && ensures each command only runs if the previous one succeeds
