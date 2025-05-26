@@ -8,6 +8,7 @@ class PIMC:
         # This is a placeholder for the actual simulation code
         print("Running PIMC simulation with parameters:", self.parameters)
         self.results = self._simulate()
+        return self.results
 
     def _simulate(self):
         # Placeholder for the simulation logic

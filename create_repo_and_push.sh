@@ -2,7 +2,7 @@
 
 # Variables - Replace these with your desired values
 #REPO_NAME="QuantumPortfolioPIMC"
-COMMIT_MESSAGE="Fix import errors and method calls in run_simulation.py script"
+COMMIT_MESSAGE="Fix PIMC run_simulation method to return results properly"
 
 # Initialize Git repository, set main branch, add all files, commit, create GitHub repo, and push
 # Using && ensures each command only runs if the previous one succeeds
