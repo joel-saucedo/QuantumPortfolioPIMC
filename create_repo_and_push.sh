@@ -2,7 +2,7 @@
 
 # Variables - Replace these with your desired values
 #REPO_NAME="QuantumPortfolioPIMC"
-COMMIT_MESSAGE="Add Portfolio class to match test expectations in portfolio.py"
+COMMIT_MESSAGE="Fix PIMC unit tests to match actual implementation"
 
 # Initialize Git repository, set main branch, add all files, commit, create GitHub repo, and push
 # Using && ensures each command only runs if the previous one succeeds
